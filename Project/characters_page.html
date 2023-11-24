@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body style="background-color: gray">
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <span class="fs-5 d-none d-sm-inline">Characters</span>
+            </a>
+            <ul
+              class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+              id="menu"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link align-middle px-0">
+                  <i class="fs-4 bi-house"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#submenu1"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle active"
+                >
+                  <i class="fs-4 bi-speedometer2"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Characters</span
+                  >
+                </a>
+                <ul
+                  class="collapse show nav flex-column ms-1"
+                  id="submenu1"
+                  data-bs-parent="#menu"
+                >
+                  <li class="w-100">
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline">The Doll</span> 1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline">The Hunter</span> 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle">
+                  <i class="fs-4 bi-table"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Areas</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#submenu2"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-bootstrap"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Villagers</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="#submenu2"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle"
+                >
+                  <i class="fs-4 bi-bootstrap"></i>
+                  <span class="ms-1 d-none d-sm-inline text-white"
+                    >Monsters</span
+                  ></a
+                >
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <table>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/the-doll-character.jpg"
+                        alt="a woman with pale skin and bloncde hair standing outside an abandoned church"
+                        class="img-fluid p-3"
+                        id="the_doll"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Doll</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/gherman.jpg"
+                        alt="an old man in a wheelchair"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Old Hunter, Gherman</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/the-hunter.jpg"
+                        alt="a man wearing dark clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Hunter</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/messenger-character.png"
+                        alt="a bunch of skeletens protruding from the ground"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Messengers</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/gilbert-character.jpg"
+                        alt="a man who is always behind a window protected with grills"
+                        class="img-fluid p-3"
+                        id="gilbert"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Gilbert</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/iosefka.jfif"
+                        alt="a woman in white clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Iosefka</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/eileen-the-crow-character.png"
+                        alt="a mysterious person wearing a mask that forms a beak of a crow"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Eileen, The Crow</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/gascoignes-daughter-character.webp"
+                        alt="a window with grills and a lantern beside it"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Gascoigne's Daughter</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/Arianna-character.webp"
+                        alt="a woman in white and red dress sitiing on a chair"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Arianna</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/skeptical-man-character.jpg"
+                        alt="a man wearing dark clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">Skeptical Man</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/the-hunter.jpg"
+                        alt="a man wearing dark clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Hunter</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/the-hunter.jpg"
+                        alt="a man wearing dark clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Hunter</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <img
+                        src="images/the-hunter.jpg"
+                        alt="a man wearing dark clothes"
+                        class="img-fluid p-3"
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <h1 class="header">The Hunter</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequuntur rem saepe optio corrupti exercitationem?
+                      Laboriosam facilis vitae, mollitia neque aliquam ullam
+                      est, rem ipsum assumenda repellat quia, blanditiis cumque
+                      fuga? Corrupti totam inventore placeat quae nam eos
+                      quibusdam ab in, sunt autem sapiente voluptatum corporis.
+                      Animi cupiditate aperiam id odio repudiandae molestias
+                      praesentium est vitae? Asperiores cumque similique
+                      voluptas ad? Et accusamus non, amet atque quidem vel
+                      explicabo enim voluptate in nisi dolor eius nobis,
+                      consequatur harum culpa esse earum, sint deleniti quia
+                      veniam molestiae tempora cumque? Illum, iste minima.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
