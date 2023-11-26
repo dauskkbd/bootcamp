@@ -11,43 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="projectstyles.css" />
     <title>Document</title>
-    <style>
-      #return_link,
-      #home_link {
-        margin-left: 10px;
-        margin-right: 5px;
-        text-decoration: none;
-      }
-
-      /* width */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
   </head>
-  <body style="background-color: gray">
+  <body>
     <!-- navigation bar section starts here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img
             src="images/bloodborne-symbol.png"
-            alt="website logo"
+            alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advisedwebsite logo"
             id="logo"
             class="img-fluid"
             style="width: 30px"
@@ -62,11 +34,13 @@
         <div class="collapse navbar-collapse" id="site_navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="characters_page.html"> Characters </a>
+              <a class="nav-link active" href="characters_page.html">
+                Characters
+              </a>
             </li>
 
             <!-- dropdown list for character starts here -->
@@ -387,29 +361,44 @@
     </nav>
     <!-- navigation bar section ends here -->
 
-    <div class="container" id="the_doll">
+    <div class="container text-center mt-5" id="header_section">
       <div class="row">
-        <div class="col-lg-3 col-md-6 col-12 mt-5">
+        <div class="col-12">
+          <img
+            src="images/Bloodborne-Logo.png"
+            alt="bloodborne logo in white stylized text only"
+            class="img-fluid"
+          />
+          <h1 class="display-1 mb-5"><strong>Characters</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3" id="the_doll">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
           <img
             src="images/the-doll-character.jpg"
             alt="a woman with pale skin and bloncde hair standing outside an abandoned church"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">The Doll</h1>
           <p id="desciption-the-doll">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur rem saepe optio corrupti exercitationem? Laboriosam
-            facilis vitae, mollitia neque aliquam ullam est, rem ipsum assumenda
-            repellat quia, blanditiis cumque fuga? Corrupti totam inventore
-            placeat quae nam eos quibusdam ab in, sunt autem sapiente voluptatum
-            corporis. Animi cupiditate aperiam id odio repudiandae molestias
-            praesentium est vitae? Asperiores cumque similique voluptas ad? Et
-            accusamus non, amet atque quidem vel explicabo enim voluptate in
-            nisi dolor eius nobis, consequatur harum culpa esse earum, sint
-            deleniti quia veniam molestiae tempora cumque? Illum, iste
-            minima.<span
+            The Doll was tenderly made by Gehrman as a means to keep him company
+            and to also serve the many hunters that would come to the Hunter's
+            Dream. The Doll is based on a student which Gehrman held affections
+            to, Lady Maria. After Maria's disappearance, Gehrman sought to
+            obsessively replicate her in the form of the Doll. The Doll herself
+            has exactly the same size and appearance as Maria, as well as the
+            same voice. However, Gehrman soon became indifferent towards the
+            Doll's presence, possibly due to the latter lacking Maria's
+            personality. The Doll is soft-spoken and polite. She holds the
+            Hunter in high regards and treats the Hunter with deep respect.
+            Having been made by humans, she loves the Hunter, but is unsure
+            whether her affection is real or artificial; a thought she ponders
+            incessantly.<span
               ><a href="#" id="return_link" class="btn btn-primary"
                 >Back to top</a
               ></span
@@ -422,16 +411,16 @@
         </div>
       </div>
     </div>
-    <div class="container" id="description_gherman">
+    <div class="container mb-3" id="description_gherman">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/gherman.jpg"
             alt="an old man in dark clothes sitting on a wheelchair"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">The First Hunter, Gherman</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -457,29 +446,26 @@
         </div>
       </div>
     </div>
-    <div class="container" id="the_hunter">
+    <div class="container mb-3" id="the_hunter">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/the-hunter.jpg"
             alt="a person wearing dark clothes holding a gun and a saw like weapon"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">The Hunter</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur rem saepe optio corrupti exercitationem? Laboriosam
-            facilis vitae, mollitia neque aliquam ullam est, rem ipsum assumenda
-            repellat quia, blanditiis cumque fuga? Corrupti totam inventore
-            placeat quae nam eos quibusdam ab in, sunt autem sapiente voluptatum
-            corporis. Animi cupiditate aperiam id odio repudiandae molestias
-            praesentium est vitae? Asperiores cumque similique voluptas ad? Et
-            accusamus non, amet atque quidem vel explicabo enim voluptate in
-            nisi dolor eius nobis, consequatur harum culpa esse earum, sint
-            deleniti quia veniam molestiae tempora cumque? Illum, iste
-            minima.<span
+            At some point in their life, the Hunter becomes aware of Paleblood,
+            and goes to Yharnam to obtain and use it to transcend the hunt.
+            Paleblood is not shown to be known about by common people unaware of
+            the Eldritch Truth, however the player wrote a note to themselves
+            mentioning it, which implies that they are aware of the Great Ones
+            to some degree. The note saying they wanted Paleblood in order to
+            transcend the hunt may mean several different goals depending on
+            what "the hunt" is referring to.<span
               ><a href="#" id="return_link" class="btn btn-primary"
                 >Back to top</a
               ></span
@@ -492,29 +478,30 @@
         </div>
       </div>
     </div>
-    <div class="container" id="master_willem">
+    <div class="container mb-3" id="master_willem">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
-            src="images/master-willem-character.webp"
+            src="images/character-master-willem.jpg"
             alt="a pale old man in a wheelchair wearing priest like robe"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Master Willem</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur rem saepe optio corrupti exercitationem? Laboriosam
-            facilis vitae, mollitia neque aliquam ullam est, rem ipsum assumenda
-            repellat quia, blanditiis cumque fuga? Corrupti totam inventore
-            placeat quae nam eos quibusdam ab in, sunt autem sapiente voluptatum
-            corporis. Animi cupiditate aperiam id odio repudiandae molestias
-            praesentium est vitae? Asperiores cumque similique voluptas ad? Et
-            accusamus non, amet atque quidem vel explicabo enim voluptate in
-            nisi dolor eius nobis, consequatur harum culpa esse earum, sint
-            deleniti quia veniam molestiae tempora cumque? Illum, iste
-            minima.<span
+            Master Willem was the head of the Byrgenwerth college, a highly
+            prestigious school of knowledge, and zealously pursued the truth and
+            the idea of elevating the mind to the plane of the gods through
+            Insight. He sent expeditions into the old labyrinth to uncover the
+            secrets of the ancient Pthumerians. Two things were uncovered from
+            these expeditions; knowledge of the Great Ones and the Old Blood,
+            from which the Healing Church would base its ministry upon. The
+            scholars of Byrgenwerth became divided. Some, like Laurence,
+            believed that the blood was the path to evolving mankind, while
+            Willem was staunchly opposed to using the blood, believing that
+            mankind must pursue Insight instead, warning against "evolution
+            without courage".<span
               ><a href="#" id="return_link" class="btn btn-primary"
                 >Back to top</a
               ></span
@@ -527,51 +514,17 @@
         </div>
       </div>
     </div>
-    <div class="container" id="messenger">
+
+    <div class="container mb-3" id="eileen-the-crow">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
-          <img
-            src="images/messenger-character.png"
-            alt="skeletons protruding on stairs with a gun and a map"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
-          <h1 class="header">Messengers</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur rem saepe optio corrupti exercitationem? Laboriosam
-            facilis vitae, mollitia neque aliquam ullam est, rem ipsum assumenda
-            repellat quia, blanditiis cumque fuga? Corrupti totam inventore
-            placeat quae nam eos quibusdam ab in, sunt autem sapiente voluptatum
-            corporis. Animi cupiditate aperiam id odio repudiandae molestias
-            praesentium est vitae? Asperiores cumque similique voluptas ad? Et
-            accusamus non, amet atque quidem vel explicabo enim voluptate in
-            nisi dolor eius nobis, consequatur harum culpa esse earum, sint
-            deleniti quia veniam molestiae tempora cumque? Illum, iste
-            minima.<span
-              ><a href="#" id="return_link" class="btn btn-primary"
-                >Back to top</a
-              ></span
-            ><span
-              ><a href="index.html" id="home_link" class="btn btn-primary"
-                >Home</a
-              ></span
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="eileen-the-crow">
-      <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/eileen-the-crow-character.png"
             alt="a mysterious woman in dark clothes wearing a mask that has a beak"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Eileen, the Crow</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -597,16 +550,16 @@
         </div>
       </div>
     </div>
-    <div class="container" id="gilbert">
+    <div class="container mb-3" id="gilbert">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/gilbert-character.jpg"
             alt="a man who is always behind a window protected with grills"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Gilbert</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -632,16 +585,16 @@
         </div>
       </div>
     </div>
-    <div class="container" id="gascoigne's_daughter">
+    <div class="container mb-3" id="gascoignes_daughter">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/gascoignes-daughter-character.webp"
             alt="a window with grills and a lantern beside it"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Gascoigne's Daughter</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -667,16 +620,16 @@
         </div>
       </div>
     </div>
-    <div class="container" id="iosefka">
+    <div class="container mb-3" id="iosefka">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/iosefka.jfif"
             alt="a woman in white clothes"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Iosefka</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -702,16 +655,16 @@
         </div>
       </div>
     </div>
-    <div class="container" id="arianna">
+    <div class="container mb-3" id="arianna">
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 mt-5">
+        <div class="col-lg-3 col-md-12 col-12">
           <img
             src="images/Arianna-character.webp"
             alt="a woman in white and red dress sitiing on a chair"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-6 col-md-12 col-12 mt-5">
+        <div class="col-lg-6 col-md-12 col-12">
           <h1 class="header">Arianna</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.

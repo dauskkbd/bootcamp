@@ -1,0 +1,109 @@
+#return_link,
+#home_link {
+  margin-left: 10px;
+  text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-image: url(images/bloodborne-bg-wallpaper.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+}
+
+#yharnam_tale_section,
+#complete_story_section {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.678);
+  color: black;
+}
+
+#header_section,
+#complete_story_header {
+  color: black;
+}
+
+#the_doll,
+#description_gherman,
+#the_hunter,
+#master_willem,
+#messenger,
+#eileen-the-crow,
+#gilbert,
+#gascoignes_daughter,
+#iosefka,
+#arianna {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.678);
+  color: black;
+}
+
+#hunters_dream,
+#iosefkas_clinic,
+#cathedral_ward,
+#old_yharnam,
+#healing_church,
+#upper_cathedral,
+#altar_of_despair,
+#forbidden_woods,
+#byrgenwerth,
+#moonside_lake,
+#hemwick_charnel,
+#old_workshop,
+#cainhurst_castle,
+#lecture_building,
+#nigthmare_frontier,
+#nightmare_mensis {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.678);
+  color: black;
+}
+
+#amygdala,
+#blood_starved_beast,
+#celestial_emmisary,
+#cleric_beast,
+#darkbeast_paarl,
+#ebrietas,
+#father_gascoigne,
+#micolash,
+#moon_presence,
+#one_reborn,
+#rom,
+#shadow_yharnam,
+#vicar_amelia,
+#witch_hemwick,
+#martyr_logarius,
+#mergos_nurse,
+#first_hunter {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.678);
+  color: black;
+}

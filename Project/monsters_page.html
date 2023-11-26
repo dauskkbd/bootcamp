@@ -11,34 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="projectstyles.css" />
     <title>Document</title>
-    <style>
-      #return_link,
-      #home_link {
-        margin-left: 10px;
-        text-decoration: none;
-      }
-      /* width */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
   </head>
-  <body style="background-color: gray">
+  <body>
     <!-- navigation bar section starts here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -60,7 +34,7 @@
         <div class="collapse navbar-collapse" id="site_navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
@@ -242,7 +216,7 @@
               <!-- dropdown list for monsters starts here -->
             </div>
             <li class="nav-item">
-              <a class="nav-link" href="monsters_page.html">Monsters</a>
+              <a class="nav-link active" href="monsters_page.html">Monsters</a>
             </li>
             <div class="dropdown pe-3">
               <button
@@ -385,17 +359,30 @@
     </nav>
     <!-- navigation bar section ends here -->
 
-    <!-- image and descritiopn for Amygdala  starts here -->
-    <div class="container" id="amygdala">
+    <div class="container text-center mt-5" id="header_section">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-12">
+          <img
+            src="images/Bloodborne-Logo.png"
+            alt="bloodborne logo in white stylized text only"
+            class="img-fluid"
+          />
+          <h1 class="display-1 mb-3"><strong>Monsters</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- image and descritiopn for Amygdala  starts here -->
+    <div class="container mb-3" id="amygdala">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-amygdala.jpg"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A creature with seven arms and a head filled with holes with no eyes and mouth"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Amygdala</h1>
           <p>
             Amygdala are Great Ones that appear to be some of the most
@@ -427,16 +414,16 @@
     <!-- image and descritiopn for Amygdala  ends here -->
 
     <!-- image and descritiopn for Blood-starved Beast starts here -->
-    <div class="container" id="blood_starved_beast">
+    <div class="container mb-3" id="blood_starved_beast">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-blood-starved-beast.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A creature with a thin body and a strange red veil hanging from it's back to it's head"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Blood-starved Beast</h1>
           <p>
             It is suggested that the Blood-starved Beast was a person receiving
@@ -467,22 +454,22 @@
     <!-- image and descritiopn for Blood-starved Beast ends here -->
 
     <!-- image and descritiopn for Celestial Emmisary starts here -->
-    <div class="container" id="celestial_emmisary">
+    <div class="container mb-3" id="celestial_emmisary">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-celestial emmisary.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A creature with a large head lights protruding from it's body "
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Celestial Emmisary</h1>
           <p>
-            Lore While there is very little information on it, this Great One is
+            While there is very little information on it, this Great One is
             revealed in the DLC to have been created by experimentation by the
             Healing Church, who used the orphans they captured as a sort of
-            think tank[1]. They would have their patients imbibe in water,
+            think tank. They would have their patients imbibe in water,
             apparently infested with otherworldly microscopic life that
             congealed the brain fluid (taken as the generation of the "eyes on
             the inside"), and listen for the sound of the ocean due to the Great
@@ -491,40 +478,12 @@
             labeled as the sound of water said to come from the depths of the
             ocean, and was thought to be the voice of a sort of celestial
             attendant that guided those with enough brain fluid "eyes" to
-            revelation[3]. Most of the patients did not survive with sanity,
-            driven mad by the feeling of drowning, and becoming convinced that
-            they had failed. They would plead for the forgiveness and help of
-            Maria, an old hunter the lived in the clocktower nearby, and was in
-            charge of patient care. She tried to comfort them by allowing them
-            access to the Lumenflower Gardens nearby, and although it worked for
-            some, most could not comprehend why she would care for their well
-            being after what was going on.[4] Those that imbibed the water were
-            deformed by the process of the body acclimating to the situation,
-            such as increase in size, thinning of the body, and the heads
-            expanding into blank, unseeing masses of flesh. Rarely their heads
-            would develop tentacles in their heads, which emerged painfully but
-            could be self induced, which caused Frenzy in lifeforms that they
-            touched. Some where able to access cosmic power of Kin, but even
-            they went mad and were left in the gardens, the calm of which was
-            likely how they remained sane enough to ascend even that far.
-            Eventually there were those who became so enlightened by what the
-            celestial attendant said that they grew to immense size, gained blue
-            flesh with gender neutral bodies, and could harness raw cosmic
-            fields to Great One levels of power. But even those patients,
-            despite the calm of the lumenwood plant that they attended, were
-            unable to remain sane and their heads collapsed in on themselves
-            while their power was unstable. They were left in the garden above
-            the lumenflowers, with a large lumenwood plant in the center, and
-            left to be living failures. It can be surmised then that the
-            Celestial Emissary, whomever it once was, maintained their sanity
-            long enough to comprehend the cosmos and become a Great One of the
-            most legitimate sort. Once they figured out how to properly, the
-            Church was likely the ones to produce Kin of the sort that the
-            patients in the garden became, and to this day they remained in the
-            garden. This entire area is thought to have been the Orphanage
-            officially, where the new Great One and the other Kin acted as the
-            Church's font of high level contemplation, and made communication
-            with Ebrietas.<span
+            revelation. Most of the patients did not survive with sanity, driven
+            mad by the feeling of drowning, and becoming convinced that they had
+            failed. They would plead for the forgiveness and help of Maria, an
+            old hunter the lived in the clocktower nearby, and was in charge of
+            patient care.
+            <span
               ><a href="#" id="return_link" class="btn btn-primary"
                 >Back to top</a
               ></span
@@ -540,16 +499,16 @@
     <!-- image and descritiopn for Celestial Emmisary ends here -->
 
     <!-- image and descritiopn for Cleric Beast starts here -->
-    <div class="container" id="cleric_beast">
+    <div class="container mb-3" id="cleric_beast">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-cleric-beast.jpg"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A giant creature with a head of a wolf and a long large left arm"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Cleric Beast</h1>
           <p>
             The Cleric Beast owes its name to a rumor that it was originally a
@@ -579,16 +538,16 @@
     <!-- image and descritiopn for Cleric Beast ends here -->
 
     <!-- image and descritiopn for Darkbeast Paarl starts here -->
-    <div class="container" id="darkbeast_paarl">
+    <div class="container mb-3" id="darkbeast_paarl">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-dark-beast-paarl.webp"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A beast with no eyes and is covered with dust on it's fur and elcticity flows around it"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Darkbeast Paarl</h1>
           <p>
             The Darkbeast is a giant skeletal beast with long strands of blueish
@@ -610,16 +569,16 @@
     <!-- image and descritiopn for Darkbeast Paarl  ends here -->
 
     <!-- image and descritiopn for Ebrietas, Daughter of the Cosmos starts here -->
-    <div class="container" id="ebrietas">
+    <div class="container mb-3" id="ebrietas">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-ebrietas.webp"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A giant entity with  multiple face and heads inside it's mouth"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Ebrietas, Daughter of the Cosmos</h1>
           <p>
             A relative of the eldritch Great Ones, Ebrietas is a monstrous
@@ -652,16 +611,16 @@
     <!-- image and descritiopn for Ebrietas, Daughter of the Cosmos  ends here -->
 
     <!-- image and descritiopn for Father Gascoigne  starts here -->
-    <div class="container" id="father_gascoigne">
+    <div class="container mb-3" id="father_gascoigne">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-father-gascoigne.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A man in dark cloak holding an axe and a long barelled pistol"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Father Gascoigne</h1>
           <p>
             Father Gascoigne is an experienced hunter who has succumbed to the
@@ -690,16 +649,16 @@
     <!-- image and descritiopn for Father Gascoigne  ends here -->
 
     <!-- image and descritiopn for Micolash, Host of the Nightmare  starts here -->
-    <div class="container" id="micolash">
+    <div class="container mb-3" id="micolash">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-micolash.jpg"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A man with his arms stretched and wears a vertical rectangular cage for his head"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Micolash, Host of the Nightmare</h1>
           <p>
             Micolash, Host of the Nightmare, was most likely a former student of
@@ -726,16 +685,16 @@
     <!-- image and descritiopn for Micolash, Host of the Nightmare ends here -->
 
     <!-- image and descritiopn for Moon Presence starts here -->
-    <div class="container" id="moon_presence">
+    <div class="container mb-3" id="moon_presence">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-moon-presence-2.jpg"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A giant entity with with tentacles coming from the side of his head and a single eye standing under the moon light"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Moon Presence</h1>
           <p>
             One of the Great Ones in Bloodborne, the Moon Presence controls and
@@ -759,16 +718,16 @@
     <!-- image and descritiopn for Moon Presence ends here -->
 
     <!-- image and descritiopn for The One Reborn starts here -->
-    <div class="container" id="one_reborn">
+    <div class="container mb-3" id="one_reborn">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-one-reborn.webp"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. An unrecognizable creature with a single body of a human at the top and it's lower part is covered with undistinguishable flesh and bones"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">The One Reborn</h1>
           <p>
             Born from an unholy Pthumerian ritual which used the bodies of
@@ -793,16 +752,16 @@
     <!-- image and descritiopn for The One Reborn ends here -->
 
     <!-- image and descritiopn for Rom, the Vacuous Spider starts here -->
-    <div class="container" id="rom">
+    <div class="container mb-3" id="rom">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-rom.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. Miltiple large spiders with it's face covered with eyes and a large one at the middle with lights on it's body"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Rom, the Vacuous Spider</h1>
           <p>
             Despite her title, Rom resembles a gigantic pillbug rather than an
@@ -825,9 +784,9 @@
     <!-- image and descritiopn for Rom, the Vacuous Spider  ends here -->
 
     <!-- image and descritiopn for Shadow of Yharnam starts here -->
-    <div class="container" id="shadow_yharnam">
+    <div class="container mb-3" id="shadow_yharnam">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-shadow-of-yharnam.png"
             alt="Warning: Graphic
@@ -837,7 +796,7 @@
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Shadow of Yharnam</h1>
           <p>
             The Shadow of Yharnam consists of three figures shrouded in black
@@ -861,16 +820,16 @@
     <!-- image and descritiopn for Shadow of Yharnam  ends here -->
 
     <!-- image and descritiopn for Vicar Amelia  starts here -->
-    <div class="container" id="vicar_amelia">
+    <div class="container mb-3" id="vicar_amelia">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-vicar-amelia.webp"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. An enormous dog looking creature covered in bandage as well as it's eyes"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Vicar Amelia</h1>
           <p>
             Vicar Amelia is a high-ranking member of the Healing Church, the
@@ -905,16 +864,16 @@
     <!-- image and descritiopn for Vicar Amelia  ends here -->
 
     <!-- image and descritiopn for The Witch of Hemwick starts here -->
-    <div class="container" id="witch_hemwick">
+    <div class="container mb-3" id="witch_hemwick">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-witch-of-hemwick.jpg"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A creature with it's back hunched waring a cloak covered with skulls "
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">The Witch of Hemwick</h1>
           <p>
             The Witch of Hemwick is visually an elderly hunched woman, with
@@ -938,16 +897,16 @@
     <!-- image and descritiopn for The Witch of Hemwick  ends here -->
 
     <!-- image and descritiopn for Martyr Logarius starts here -->
-    <div class="container" id="martyr_logarius">
+    <div class="container mb-3" id="martyr_logarius">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-martyr-logarius.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A tall entity holding a red scythe and it's face is covered with long white hair"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Martyr Logarius</h1>
           <p>
             Martyr Logarius was once the head of the Executioners, a fanatical
@@ -976,16 +935,16 @@
     <!-- image and descritiopn for Martyr Logarius  ends here -->
 
     <!-- image and descritiopn for Mergo's Wet Nurse  starts here -->
-    <div class="container" id="mergo's_nurse">
+    <div class="container mb-3" id="mergos_nurse">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-mergo-nurse.webp"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. An entity with multiple arms and blades at the end, with wings that drape from it's shoulder to it's back"
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Mergo's Wet Nurse</h1>
           <p>
             Mergo's Wet Nurse is a strange towering creature with six skeletal
@@ -1012,16 +971,16 @@
     <!-- image and descritiopn for Mergo's Wet Nurse ends here -->
 
     <!-- image and descritiopn for Gehrman, the First Hunter  starts here -->
-    <div class="container" id="first_hunter">
+    <div class="container mb-3" id="first_hunter">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12 mt-5">
+        <div class="col-lg-4 col-md-12 col-12">
           <img
             src="images/monster-gherman.png"
             alt="Warning: Graphic content. An image depicting intense and disturbing visuals. Viewer discretion is advised. A man wearing dark clothes holding along scythe."
             class="img-fluid"
           />
         </div>
-        <div class="col-lg-8 col-md-12 col-12 mt-5">
+        <div class="col-lg-8 col-md-12 col-12">
           <h1 class="header">Gehrman, the First Hunter</h1>
           <p>
             "Dear, oh dear, what was it? The hunt, the blood, or the horrible
