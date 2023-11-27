@@ -3,22 +3,19 @@
   margin-left: 10px;
   text-decoration: none;
 }
-/* width */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -35,7 +32,7 @@ body {
   border: 2px solid black;
   border-radius: 15px;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.678);
+  background-color: rgba(128, 128, 128, 0.801);
   color: black;
 }
 
@@ -53,11 +50,12 @@ body {
 #gilbert,
 #gascoignes_daughter,
 #iosefka,
-#arianna {
+#arianna,
+#laurence {
   border: 2px solid black;
   border-radius: 15px;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.678);
+  background-color: rgba(128, 128, 128, 0.806);
   color: black;
 }
 
@@ -80,7 +78,7 @@ body {
   border: 2px solid black;
   border-radius: 15px;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.678);
+  background-color: rgba(128, 128, 128, 0.806);
   color: black;
 }
 
@@ -106,4 +104,23 @@ body {
   padding: 20px;
   background-color: rgba(128, 128, 128, 0.678);
   color: black;
+}
+
+span a {
+  color: black;
+}
+
+#text_video_replacement {
+  color: white;
+}
+
+#footer_div {
+  background-color: rgba(128, 128, 128, 0.678);
+  border-top: 2px solid black;
+  padding: 10px;
+}
+
+#footer_div a {
+  color: black;
+  text-decoration: none;
 }
