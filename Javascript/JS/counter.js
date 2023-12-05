@@ -12,6 +12,6 @@ function runActivity() {
     if (user_input > 2 && user_input < 20) {
       user_number = Number(prompt("Give me a number."));
     }
-    console.log(i);
+    i = integer;
   }
 }
