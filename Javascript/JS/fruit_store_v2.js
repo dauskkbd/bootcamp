@@ -14,18 +14,18 @@ function runActivity() {
       fruit_names.push(fruit_name);
       fruit_prices.push(fruit_price);
       fruit_stocks.push(fruit_stock);
+      console.log(
+        fruit_name +
+          " added as item for sale. Each " +
+          fruit_name +
+          " sells for " +
+          fruit_price +
+          " || Stock: " +
+          fruit_stock
+      );
     } else {
       console.error("ERROR: Invalid price! Enter a positive value.");
     }
-    console.log(
-      fruit_names +
-        " added as item for sale. Each " +
-        fruit_names +
-        " sells for " +
-        fruit_prices +
-        " || Stock: " +
-        fruit_stocks
-    );
   }
 
   function restock() {
