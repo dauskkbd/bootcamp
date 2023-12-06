@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+    <script src="test.js"></script>
+  </head>
+  <script>
+    function count_vowels(word) {
+      word = word.toLowerCase();
+      let vowels = "aeiou";
+      let vowel_counter = 0;
+      for (let i = 0; i < word.length; i++) {
+        if (vowels.includes(word.charAt(i))) {
+          vowel_counter++;
+        }
+      }
+      return vowel_counter;
+    }
+
+    function count_consonants(word) {
+      word = word.toLowerCase();
+      let consonants = "bcdfghjklmnpqrstvwxyz";
+      let cons_counter = 0;
+      for (let i = 0; i < word.length; i++) {
+        if (consonants.includes(word.charAt(i))) {
+          cons_counter++;
+        }
+      }
+      return cons_counter;
+    }
+
+    function run() {
+      let entry = prompt("Give me a word.");
+      if (entry != "") {
+        let vowels = count_vowels(entry);
+        let consonants = count_consonants(entry);
+        return "Vowels: " + vowels + " | Consonants: " + consonants;
+      } else {
+        console.error("ERROR: Empty input");
+      }
+    }
+  </script>
+  <body>
+    <button onclick="console.log(run())">Run</button>
+  </body>
+</html>

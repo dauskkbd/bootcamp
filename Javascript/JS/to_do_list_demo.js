@@ -2,7 +2,7 @@ function runActivity() {
   const todo_list = [];
 
   while (true) {
-    let todo = prompt("Add item for to-do list: (0) Stop ");
+    let todo = prompt("Add item for to-do list (0) Stop: ");
     if (todo != 0) {
       console.log("Length: " + todo.length);
       if (todo.toLowerCase() == "buy food") {

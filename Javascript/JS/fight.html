@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let w_max_hp = 100;
+    let s_max_hp = 300;
+    let w_hp = w_max_hp;
+    let s_hp = s_max_hp;
+    let w_attack_dmg = 30;
+    let w_fireball_dmg = 40;
+    let s_light_dmg = 15;
+    let s_heavy_dmg = 30;
+    let s_magic_heal = 30;
+    let s_move;
+    let special_interaction = false;
+
+    function rng_skeleton() {
+      let rng = Math.random();
+      if (rng <= 0.25) {
+        s_move = "light";
+      } else if (rng <= 0.5) {
+        s_move = "heavy";
+      } else if (rng <= 0.75) {
+        s_move = "block";
+      } else {
+        s_move = "magic";
+      }
+    }
+
+    function skeleton_move() {
+      switch (s_move) {
+        case "light":
+          console.log("The Skeleton King gives you a boo boo...");
+          w_hp -= s_light_dmg;
+          break;
+        case "heavy":
+          console.log(
+            "The Skeleton King insults your mother and ancestors! It's super effective!"
+          );
+          w_hp -= s_heavy_dmg;
+          break;
+      }
+    }
+
+    function warrior_attack() {
+      rng_skeleton();
+      if (s_move == "block") {
+        console.log("HA! DI KA MAHAL NG MAMA MO!");
+        special_interaction = true;
+      }
+      console.log("You swung your sword, Skeleton King says ouch!");
+      s_hp -= w_attack_dmg;
+      do_turn();
+    }
+
+    function warrior_block() {
+      rng_skeleton();
+      if (s_move == "light") {
+        console.log(
+          "SK says, Ikaw nga sa sobrang panget mo, pag naghiwa ka ng sibuyas, yung sibuyas umiiyak."
+        );
+        special_interaction = true;
+      }
+      console.log("You raised your shield like Captain America!");
+      do_turn();
+    }
+
+    function warrior_counter() {
+      rng_skeleton();
+      if (s_move == "heavy") {
+        console.log("SANAOL!");
+        s_hp -= w_attack_dmg * 3;
+        special_interaction = true;
+      }
+      console.log("Your rolled out of the way and hit your head on a rock!");
+      do_turn();
+    }
+
+    function warrior_fireball() {
+      rng_skeleton();
+      if (s_move == "magic") {
+        console.log("The Skeleton King tasted success and regretted it!");
+        if (s_max_hp - s_hp > s_magic_heal) {
+          s_hp += s_magic_heal;
+        }
+        s_hp += w_fireball_dmg;
+        special_interaction = true;
+      } else if (s_move == "block") {
+        console.log(
+          "The Skeleton King's shield is burning! Where did it get that shield in the first place?!"
+        );
+        s_hp -= w_fireball_dmg * 2;
+        special_interaction = true;
+      }
+      console.log("You cast a fireball from your butt! It's super effective!");
+      s_hp -= w_fireball_dmg;
+      do_turn();
+    }
+
+    function do_turn() {
+      if (s_hp <= 0) {
+        console.log(
+          "The Skeleton King has fallen! It is a skeleton, so why was it standing up?"
+        );
+      }
+      if (special_interaction == false) {
+        skeleton_move();
+      }
+      if (w_hp <= 0) {
+        console.log("The warrior is an idiot for losing from a dead person.");
+      }
+      special_interaction = false;
+      show_stats();
+    }
+
+    function show_stats() {
+      console.log("Warrior's HP: " + w_hp + "/" + w_max_hp);
+      console.log("Skeleton King's HP: " + s_hp + "/" + s_max_hp);
+      console.log("-----------------------------");
+    }
+  </script>
+  <body>
+    <h1>Fight the Skeleton King!</h1>
+    <img src="attack/skeleton.webp" style="width: 50%" />
+    <div>
+      <img
+        src="attack/attack.webp"
+        onclick="warrior_attack()"
+        style="width: 100px"
+      />
+      <img
+        src="attack/block.webp"
+        onclick="warrior_block()"
+        style="width: 100px"
+      />
+      <img
+        src="attack/counter.webp"
+        onclick="warrior_counter()"
+        style="width: 100px"
+      />
+      <img
+        src="attack/fireball.webp"
+        onclick="warrior_fireball()"
+        style="width: 100px"
+      />
+    </div>
+  </body>
+</html>
