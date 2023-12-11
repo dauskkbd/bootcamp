@@ -3,10 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="jquery-3.7.1.min.js"></script>
-    <script></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").mouseenter(function () {
+          // for button function n jquery
+          // alert("Have you pushed the button yet?");
+          $("img").slideToggle();
+        });
+      });
+
+      // function changeHeading() {
+      //   let heading_text = document.getElementById("heading_name").innerHTML;
+      //   if (heading_text != "Hello Ardyn Lucis Caelum") {
+      //     document.getElementById("heading_name").innerHTML =
+      //       "Hello Ardyn Lucis Caelum";
+      //   } else {
+      //     document.getElementById("heading_name").innerHTML =
+      //       "Kevin Kenneth B. Daus";
+      //   }
+      // }
+    </script>
 
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="heading_name">Kevin Kenneth B. Daus</h1>
+    <img
+      src="images/monsterHunter_wilds.webp"
+      width="300px"
+      alt="monster hunter wilds"
+    /><br />
+
+    <button>Change</button>
+  </body>
 </html>
