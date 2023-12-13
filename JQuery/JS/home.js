@@ -47,9 +47,17 @@ $(document).ready(function () {
   $("img.painting").mouseenter(function () {
     $(this).removeClass("painting-small");
     $(this).addClass("painting-large");
+    let desc = $(this).prop("alt");
+    $("#painting-caption").text(desc);
   });
   $("img.painting").mouseleave(function () {
     $(this).addClass("painting-small");
     $(this).removeClass("painting-large");
+    $("#painting-caption").text("");
+  });
+
+  $("img.bag-preview").mouseenter(function () {
+    let source = $(this).prop("src");
+    $("#bag-display").prop("src", source);
   });
 });
