@@ -3,25 +3,52 @@ $(document).ready(function () {
   let exercise = 100;
   let sleep = 100;
 
-  function do_eat() {
-    hunger += 100;
+  // function do_eat() {
+  //   hunger = 100;
+  //   sleep -= 5;
+  //   update_bars();
+  //   update_activity(
+  //     "Zinogre consumed food, you will feel it's thunderous wrath less"
+  //   );
+  // }
+
+  $("#zinogre_eat").click(function () {
+    hunger = 100;
     sleep -= 5;
     update_bars();
-    update_activity("Ate some food");
-  }
+    update_activity(
+      "Zinogre consumed food, you will feel it's thunderous wrath less"
+    );
+  });
 
-  function do_exercise() {
-    exercise += 100;
+  // function do_exercise() {
+  //   exercise = 100;
+  //   sleep -= 10;
+  //   update_bars();
+  //   update_activity(
+  //     "The Thunder beast took a stretch, it starts with a good mood"
+  //   );
+  // }
+  $("#zinogre_exercise").click(function () {
+    exercise = 100;
     sleep -= 10;
     update_bars();
-    update_activity("Did some exercise");
-  }
+    update_activity(
+      "The Thunder beast took a stretch, it starts with a good mood"
+    );
+  });
 
-  function do_sleep() {
-    sleep += 100;
+  // function do_sleep() {
+  //   sleep = 100;
+  //   update_bars();
+  //   update_activity("Zinogre needed to recharge under the storm");
+  // }
+
+  $("#zinogre_sleep").click(function () {
+    sleep = 100;
     update_bars();
-    update_activity("Had a nap");
-  }
+    update_activity("Zinogre needed to recharge under the storm");
+  });
 
   function update_bars() {
     $("#hunger_bar").css("width", hunger + "%");
@@ -49,6 +76,7 @@ $(document).ready(function () {
 
   setInterval(function () {
     hunger -= 1;
+    console.log(hunger);
   }, 500);
 
   setInterval(function () {
@@ -59,22 +87,18 @@ $(document).ready(function () {
     sleep -= 1;
   }, 2000);
 
-  $("#zinogre_eat").click(function () {
-    do_eat();
-    update_activity(
-      "Zinogre consumed food, you will feel it's thunderous wrath less"
-    );
-  });
+  // $("#zinogre_eat").click(function () {
+  //   do_eat();
+  //   update_activity(message);
+  // });
 
-  $("#zinogre_exercise").click(function () {
-    do_exercise();
-    update_activity(
-      "The Thunder beast took a stretch, it starts with a good mood"
-    );
-  });
+  // $("#zinogre_exercise").click(function () {
+  //   do_exercise();
+  //   update_activity(message);
+  // });
 
-  $("#zinogre_sleep").click(function () {
-    do_sleep();
-    update_activity("Zinogre needed to recharge under the storm");
-  });
+  // $("#zinogre_sleep").click(function () {
+  //   do_sleep();
+  //   update_activity(message);
+  // });
 });

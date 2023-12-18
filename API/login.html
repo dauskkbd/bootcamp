@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Login</title>
+    <script>
+      $(document).ready(function () {
+        if (
+          localStorage.getItem("remember_me") === "true" &&
+          localStorage.getItem("form_user_name") &&
+          localStorage.getItem("form_password")
+        ) {
+          window.location.href = "home.html";
+        }
+
+        if (localStorage.getItem("remember_me") === "true") {
+          let form_user_name = localStorage.getItem("form_user_name");
+          let form_password = localStorage.getItem("form_password");
+
+          $("#user_name").val(form_user_name);
+          $("#password").val(form_password);
+          $("#cb_remember_me").prop("checked", true);
+        }
+
+        $("#submit_button").click(function (x) {
+          x.preventDefault();
+          let user_name = $("#user_name").val();
+          let password = $("#password").val();
+          let remember_me = $("#cb_remember_me").prop("checked");
+
+          if (user_name === "user") {
+            localStorage.setItem("form_user_name", user_name);
+          } else {
+            alert("Username does not match expected input. Try typing user");
+          }
+
+          if (password === "pw123") {
+            localStorage.setItem("form_password", password);
+          } else {
+            alert("Password does not match expected input. Try typing pw123");
+          }
+
+          if (user_name === "user" && password === "pw123") {
+            if (remember_me) {
+              localStorage.setItem("form_user_name", user_name);
+              localStorage.setItem("form_password", password);
+              localStorage.setItem("remember_me", remember_me);
+            } else {
+              localStorage.removeItem("form_user_name");
+              localStorage.removeItem("form_password");
+              localStorage.removeItem("remember_me");
+            }
+
+            window.location.href = "home.html";
+          } else {
+            window.location.href = "login.html";
+          }
+        });
+      });
+    </script>
+    <style>
+      .form-control {
+        width: 300px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="login_form">
+      <label for="">Username: </label>
+      <input type="text" id="user_name" class="form-control" />
+      <label for="">Password: </label>
+      <input type="password" id="password" class="form-control" />
+      <div class="mt-2">
+        <input type="checkbox" id="cb_remember_me" />Remember me
+      </div>
+
+      <input type="submit" id="submit_button" class="mt-2" />
+    </form>
+  </body>
+</html>
