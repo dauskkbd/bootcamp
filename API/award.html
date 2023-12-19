@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#search_button").click(async function (x) {
+          x.preventDefault();
+          let search_input = $("#search_input").val();
+
+          const settings = {
+            async: true,
+            crossDomain: true,
+            url:
+              "https://imdb8.p.rapidapi.com/actors/get-awards?nconst=" +
+              search_input,
+            method: "GET",
+            headers: {
+              "X-RapidAPI-Key":
+                "606c970fb7msh8b0392879e4cf78p1ad1fbjsn326755ddcd8b",
+              "X-RapidAPI-Host": "imdb8.p.rapidapi.com",
+            },
+          };
+
+          $.ajax(settings).done(function (response) {
+            $("#search_award_lists").empty();
+
+            if (response.resource && response.resource.awards) {
+              for (i = 0; i < response.resource.awards.length; i++) {
+                let search_award_list = $("#search_award_lists").html();
+                let results = response.resource.awards[i];
+                let award_list = `<li>${results.awardName}, ${results.eventName}, ${results.year}</li>`;
+                $("#search_award_lists").html(search_award_list + award_list);
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <title>Actor/Actress Awards</title>
+  </head>
+  <body>
+    <h1>Lookup Awards</h1>
+    <form action="" id="search_form">
+      <label for="search_input" id="search_label">Enter IMDB ID</label><br />
+      <input type="text" id="search_input" />
+      <input type="submit" class="btn btn-primary" id="search_button" />
+      <ul id="search_award_lists"></ul>
+    </form>
+  </body>
+</html>
