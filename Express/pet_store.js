@@ -4,7 +4,7 @@ const pets = [
     species: "dog",
     eating_habit: "omnivore",
     pet_name: "Inuyasha",
-    image: "images/inuyasha.jpg",
+    image: "inuyasha.jpg",
   },
 
   {
@@ -12,7 +12,7 @@ const pets = [
     species: "dog",
     eating_habit: "omnivore",
     pet_name: "Sesshomaru",
-    image: "images/sesshomaru.jpg",
+    image: "sesshomaru.jpg",
   },
 
   {
@@ -20,7 +20,7 @@ const pets = [
     species: "cat",
     eating_habit: "carnivore",
     pet_name: "Hunti",
-    image: "images/hunti.jpg",
+    image: "hunti.jpg",
   },
 
   {
@@ -28,7 +28,7 @@ const pets = [
     species: "cat",
     eating_habit: "omnivore",
     pet_name: "Yuri",
-    image: "images/yuri.jpg",
+    image: "yuri.jpg",
   },
 
   {
@@ -36,7 +36,7 @@ const pets = [
     species: "bird",
     eating_habit: "herbivore",
     pet_name: "Chimk",
-    image: "images/chimk.jpg",
+    image: "chimk.jpg",
   },
 ];
 

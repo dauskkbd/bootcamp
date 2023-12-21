@@ -12,6 +12,7 @@ app.put("/api/pets", (req, res) => {
     species: req.body.species,
     eating_habit: req.body.eating_habit,
     pet_name: req.body.pet_name,
+    image: "Punctuation.webp",
   };
   console.log(new_pet);
   p.push(new_pet);
